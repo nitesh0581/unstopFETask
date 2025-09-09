@@ -1,0 +1,148 @@
+body {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 5rem 1rem;
+  gap: 1rem;
+  box-sizing: border-box;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  gap: 2rem;
+}
+
+.home-container h2 {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 1.3;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  color: #2f2f2f;
+}
+
+.home-container h2 span {
+  color: #6358dc;
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: 1.3;
+}
+
+.user-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 350px;
+  height: 311px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  opacity: 1;
+}
+
+.user-avatar {
+  width: 30vw;
+  max-width: 120px;
+  height: 120px;
+  opacity: 1;
+  aspect-ratio: 1 / 1;
+  border-radius: 100px;
+  border: 1px solid #e2e2e2;
+}
+
+.user-Name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 119px;
+  height: 63px;
+  gap: 10px;
+  opacity: 1;
+}
+
+.user-card h3 {
+  font-family: Inter;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  color: #6358dc;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.user-card p {
+  color: #383838;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.btn-logout {
+  background: #6358dc;
+  width: 100%;
+  max-width: 200px;
+  height: 48px;
+  color: #ffffff;
+  gap: 10px;
+  opacity: 1;
+  border-radius: 16px;
+  border: 1px solid #ffffff;
+  font-family: Inter;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .home-container h2 {
+    font-size: 1.75rem;
+  }
+  .home-container h2 span {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .user-card {
+    padding: 15px;
+    gap: 15px;
+  }
+  .btn-logout {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
